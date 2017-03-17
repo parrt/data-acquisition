@@ -11,13 +11,15 @@ This certificate course is part of the [Data Institute at the University of San 
 
 **INSTRUCTOR.** [Terence Parr](http://parrt.cs.usfca.edu). I’m a professor in the computer science department and was founding director of the MS in Analytics program at USF.  Please call me Terence or Professor (the use of “Terry” is a capital offense).
 
-**SPATIAL COORDINATES.** 101 Howard. Room to be determined.
+**SPATIAL COORDINATES.** 101 Howard Street, Room 153 (main floor behind the elevators). As you walk in, cut to the left just before the elevators.
 
-**TEMPORAL COORDINATES.** 1-3:30pm Saturdays, March 18 - April 29.
+**TEMPORAL COORDINATES.** 1-4:30pm Saturdays, March 18 - April 29 (6 sessions). No meeting Apr 15, Easter weekend.
 
-**INSTRUCTION FORMAT**. Class runs for 2.5 hours. Instructor-student interaction during lecture is encouraged and we'll mix in mini-exercises / labs during class. All programming will be done in the Python 2 programming language, unless otherwise specified.
+**INSTRUCTION FORMAT**. Class runs for 3.5 hours. Instructor-student interaction during lecture is encouraged and we'll do lots of mini-exercises / labs during class. All programming will be done in the Python 2 programming language, unless otherwise specified.
 
 **TARDINESS.** Please be on time for class. It is a big distraction if you come in late.
+
+**STUDENT EVALUATION**.  Letter grades will not be assigned, though I'm happy to give you private feedback about how well you did. Those attending at least 5 out of 6 classes will get the official certificate. I will assign projects that you can work on outside of class and I will go over the solutions.
 
 **ON DISABILITIES.** If you are a student with a disability or disabling condition, or if you think you may have a disability, please contact USF Student Disability Services (SDS) at 415/422-2613 within the first week of class, or immediately upon onset of the disability, to speak with a disability specialist. If you are determined eligible for reasonable accommodations, please meet with your disability specialist so they can arrange to have your accommodation letter sent to me, and we will discuss your needs for this course. For more information, please visit http://www.usfca.edu/sds/ or call 415/422-2613.
 

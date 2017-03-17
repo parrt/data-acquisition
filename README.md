@@ -25,6 +25,16 @@ This certificate course is part of the [Data Institute at the University of San 
 
 # Syllabus
 
+## Python refresher
+
+* ['Bash' your way to victory](https://github.com/parrt/msan501/blob/master/notes/bash-intro.md)
+* [Lightning lab: Say Hello](https://github.com/parrt/msan501/blob/master/lightning/hello.md)
+* [Simple statements and functions](https://github.com/parrt/msan501/blob/master/notes/area.md)
+* [Lists and loops](notes/lists.md)
+* [Importing library code](https://github.com/parrt/msan501/blob/master/notes/imports.md)
+* [Importing your own code](notes/myimport.md)
+
+
 ## Data formats
 
 * [representing text in a computer](https://github.com/parrt/msan692/blob/master/notes/text.md); see also [7-bit ascii codes](http://www.asciitable.com/), [unicode vs ascii in python](https://docs.python.org/2/howto/unicode.html)

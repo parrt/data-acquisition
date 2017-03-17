@@ -28,9 +28,9 @@ This certificate course is part of the [Data Institute at the University of San 
 ## Data formats
 
 * [representing text in a computer](https://github.com/parrt/msan692/blob/master/notes/text.md); see also [7-bit ascii codes](http://www.asciitable.com/), [unicode vs ascii in python](https://docs.python.org/2/howto/unicode.html)
-* [Data pipeline project](https://github.com/parrt/msan692/blob/master/hw/pipeline.md) (Converting stock history from Yahoo finance to various formats) (**project**)
+* [Data pipeline project](https://github.com/parrt/data-acquisition/blob/master/hw/pipeline.md) (Converting stock history from Yahoo finance to various formats) (**project**)
 	* reading delimited data; tsv, csv
-	*  reading/generating XML (we'll load complicated XML in [TFIDF project](https://github.com/parrt/msan692/blob/master/hw/tfidf.md))
+	*  reading/generating XML (we'll load complicated XML in [TFIDF project](https://github.com/parrt/data-acquisition/blob/master/hw/tfidf.md))
 	* reading/generating json
 * [PDF using pdf2txt.py](https://github.com/parrt/msan692/blob/master/notes/pdf.md) (Parsing documents from Eisenhower's presidential library)
 * [Excel](https://github.com/parrt/msan692/blob/master/notes/excel.md) (Saving as CSV, stripping non-ASCII stuff, loading into Python)
@@ -45,7 +45,7 @@ This certificate course is part of the [Data Institute at the University of San 
 * [flask](https://github.com/parrt/msan692/blob/master/notes/flask.md)
 * [Web analytics](https://github.com/parrt/msan692/blob/master/notes/webanalytics.md)
 * [Cookies](https://github.com/parrt/msan692/blob/master/notes/cookies.md), logging in/out
-* [Building web servers](https://github.com/parrt/msan692/blob/master/hw/server.md) (**project**)
+* [Building web servers](https://github.com/parrt/data-acquisition/blob/master/hw/server.md) (**project**)
 
 ## Data sources
 
@@ -70,7 +70,7 @@ This certificate course is part of the [Data Institute at the University of San 
 ## Feature extraction
 
 * [Computing TFIDF](https://github.com/parrt/msan692/blob/master/notes/tfidf.pdf)
-* [TFIDF document summarization](https://github.com/parrt/msan692/blob/master/hw/tfidf.md) (**project**)
+* [TFIDF document summarization](https://github.com/parrt/data-acquisition/blob/master/hw/tfidf.md) (**project**)
 * regex
 * Unix commands for extracting web content: wget, grep, awk, cut, paste, join, sed
 * k-means for compression, color selection

@@ -14,23 +14,22 @@ Use file `lists.py`.
 Lists are sequences of objects. These are also called arrays.
 
 ```python
-[1,2,3,4]
-['parrt', 'tombu']
+sizes = [1,2,3,4]
+names = ['parrt', 'tombu']
 ```
 
 Lists can have homogeneous or heterogeneous items.
 
 ```python
-['parrt', 1.2, True]
+stuff = ['parrt', 1.2, True]
 ```
 
-Lists are like books whose pages we can individually access. We can also treat the book as a single object.
+Lists are like books with individual pages. We can also treat the book as a single object: `print names`.
 
 We can concatenate two lists using the addition symbol
 
 ```python
-[1,2] + [9,10,11]
-[1, 2, 9, 10, 11]
+[1,2] + [9,10,11] # gives [1, 2, 9, 10, 11]
 ```
 
 Books are referenced by page number, list elements are referenced by their index number and indexes start at 0 not 1:
@@ -47,7 +46,20 @@ for name in names:
         print name
 ```
 
-The idea of iterating a variable, `i`, from 0 to the length of a list - 1 is such a common pattern that almost all languages have something to automate this boilerplate code for us: `for` loops.
+We do that a lot as well as walking lines of text.
+
+```python
+text = """lois,34
+peter,33
+brian,10
+"""
+lines = text.split("\n") # split into different lines
+for line in lines:
+	cols = line.split(',') # split into different columns
+	print cols
+```
+
+Sometimes we want to iterate a variable, `i`, from 0 to the length of a list - 1. It is such a common pattern that almost all languages have something to automate this boilerplate code for us. Python has `range()`:
 
 ```python
 n = 5
@@ -71,4 +83,3 @@ for grade in grades:
 
 print "Number of A's: %d" % numA
 ```
-

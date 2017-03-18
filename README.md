@@ -33,7 +33,7 @@ This certificate course is part of the [Data Institute at the University of San 
 * [Lists and loops](notes/lists.md)
 * [Importing library code](https://github.com/parrt/msan501/blob/master/notes/imports.md)
 * [Importing your own code](notes/myimport.md)
-
+* [Reading and writing files](https://github.com/parrt/msan501/blob/master/notes/files.md)
 
 ## Data formats
 

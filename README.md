@@ -31,6 +31,7 @@ This certificate course is part of the [Data Institute at the University of San 
 * [Lightning lab: Say Hello](https://github.com/parrt/msan501/blob/master/lightning/hello.md)
 * [Simple statements and functions](https://github.com/parrt/msan501/blob/master/notes/area.md)
 * [Lists and loops](notes/lists.md)
+* [Matrices](notes/matrix.md)
 * [Importing library code](https://github.com/parrt/msan501/blob/master/notes/imports.md)
 * [Importing your own code](notes/myimport.md)
 * [Reading and writing files](https://github.com/parrt/msan501/blob/master/notes/files.md)

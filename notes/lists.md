@@ -1,16 +1,5 @@
 # Lists and Vectors
 
-## Goals
-
-* get used to lists of numbers (vectors)
-* iterate with counter variable and `while`
-* iterate with `for` loop
-* use `print` variations
-
-Use file `lists.py`.
-
-## Description
-
 Lists are sequences of objects. These are also called arrays.
 
 ```python
@@ -39,7 +28,7 @@ names = ['lois', 'stewie', 'peter', 'brian']
 names[0] # prints lois
 ```
 
-### Iterating over a list
+## Iterating over a list
 
 ```python
 for name in names:
@@ -71,7 +60,7 @@ print # print with no arguments simply gives a \n
 
 That prints `0 1 2 3 4`.
 
-## Student exercise
+**Exercise**
 
 Write a program that counts the number of `A`’s (scores between 90 and 100)
 
@@ -82,4 +71,43 @@ for grade in grades:
 	# if grade is in 90-100, add one to numA
 
 print "Number of A's: %d" % numA
+```
+
+## Adding to a list
+
+A very common operation is to iterate through one bit of data and collect info in a list.
+
+```python
+sizes = [1,2,3,4]
+bigger = []
+for size in sizes:
+    bigger.append(s*size)
+print bigger # [2,4,6,8]
+```
+
+Or, as a convenience, you can do:
+
+```python
+sizes = [1,2,3,4]
+bigger = [2*size for size in sizes]
+```
+
+That is also useful for lists of strings:
+
+```python
+names = ['lois', 'stewie', 'peter', 'brian']
+upper = [name.upper() for name in names]
+print upper # ['LOIS', 'STEWIE', 'PETER', 'BRIAN']
+```
+
+## Iterating through strings
+
+Strings act like arrays/lists too. ``
+
+```python
+s="hi, mom"
+print s[0] # prints 'h'
+print s[2] # prints ','
+for c in s:
+	print c  # prints 1 char from s each iteration per line
 ```

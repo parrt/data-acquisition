@@ -20,6 +20,8 @@ $ python csv2xml.py foo.csv
 ...
 ```
 
+I have created a [starterkit zip file](https://github.com/parrt/data-acquisition/raw/master/hw/code/pipeline.zip) to get you started; or you can [browse the files](https://github.com/parrt/data-acquisition/tree/master/hw/code/pipeline).
+
 ### (Optional) Translation pipeline
 
 The idea of a pipeline is that you will be able to read in some data in csv format and pass it through a sequence of data conversions, ultimately getting it back to the original format:

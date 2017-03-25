@@ -28,7 +28,7 @@ This certificate course is part of the [Data Institute at the University of San 
 ## Python refresher
 
 * [Say Hello](https://github.com/parrt/msan501/blob/master/lightning/hello.md)
-* ['Bash' your way to victory](https://github.com/parrt/msan501/blob/master/notes/bash-intro.md)
+* (Optional) ['Bash' your way to victory](https://github.com/parrt/msan501/blob/master/notes/bash-intro.md) 
 * [Simple statements and functions](https://github.com/parrt/msan501/blob/master/notes/area.md)
 * [Lists and loops](notes/lists.md)
 * [Matrices](notes/matrix.md)
@@ -38,10 +38,10 @@ This certificate course is part of the [Data Institute at the University of San 
 
 ## Data formats
 
-* [representing text in a computer](https://github.com/parrt/msan692/blob/master/notes/text.md); see also [7-bit ascii codes](http://www.asciitable.com/), [unicode vs ascii in python](https://docs.python.org/2/howto/unicode.html)
-* [Data pipeline project](https://github.com/parrt/data-acquisition/blob/master/hw/pipeline.md) (Converting stock history from Yahoo finance to various formats) (**project**)
+* (Optional) [representing text in a computer](https://github.com/parrt/msan692/blob/master/notes/text.md); see also [7-bit ascii codes](http://www.asciitable.com/), [unicode vs ascii in python](https://docs.python.org/2/howto/unicode.html) 
+* [Data conversion](https://github.com/parrt/data-acquisition/blob/master/hw/pipeline.md) (Converting stock history from Yahoo finance to various formats) (**project**)
 	* reading delimited data; tsv, csv
-	*  reading/generating XML (we'll load complicated XML in [TFIDF project](https://github.com/parrt/data-acquisition/blob/master/hw/tfidf.md))
+	* reading/generating XML
 	* reading/generating json
 * [PDF using pdf2txt.py](https://github.com/parrt/msan692/blob/master/notes/pdf.md) (Parsing documents from Eisenhower's presidential library)
 * [Excel](https://github.com/parrt/msan692/blob/master/notes/excel.md) (Saving as CSV, stripping non-ASCII stuff, loading into Python)

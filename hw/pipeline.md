@@ -263,7 +263,18 @@ xml = untangle.parse(xmltxt)
 
 At this point, we need to know about the actual structure of the XML before we can pull data out. The root of the structure is the `file` tag so `xml.file` will get us that node in the tree. From there, you need to iterate over the `record` elements underneath the `data` tag. Pull out the individual values by their name such as `Date`.  Be careful how you fill in the CSV "table" for output: the order of the columns must be the order given in the headers tag.
 
-Notice that there are no spaces in the tag names but the `headers` tag includes the real header names like `Adj Close`. You will have to take this into consideration when looking for tags in the XML.
+Notice that there are no spaces in the tag names but the `headers` tag might include header names with spaces like `Adj Close`. You will have to take this into consideration when looking for tags in the XML.
+
+
+```bash
+TITLE,ARTIST,COUNTRY,COMPANY,PRICE,YEAR
+Empire Burlesque,Bob Dylan,USA,Columbia,10.90,1985
+Hide your heart,Bonnie Tylor,UK,CBS Records,9.90,1988
+Greatest Hits,Dolly Parton,USA,RCA,9.90,1982
+Still got the blues,Gary More,UK,Virgin redords,10.20,1990
+Eros,Eros Ramazzotti,EU,BMG,9.90,1997
+...
+```
 
 You can check your work with:
  

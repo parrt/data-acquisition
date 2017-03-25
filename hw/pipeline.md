@@ -4,11 +4,12 @@
 
 The goal of this  homework is to study the most common text-based data formats: `csv`, `xml`, `json`, and `html`. Parsing data files can be tricky, but generating them is easy and teaches you to speak in those languages. In this first homework, you will therefore be generating data in multiple formats but using standard Python libraries to read that data back in. The exception is that you will be parsing comma-separated value (CSV) files the hard way (i.e., yourself). 
 
-You will create 4 Python programs:
+You will create 5 Python programs:
 
+* csv2html.py
 * csv2xml.py
-* xml2csv.py
 * csv2json.py
+* xml2csv.py
 * json2csv.py
 
 which do the data conversions according to their names. A function call `getdata()` is provided for you in file `mycsv.py` (see below), either get the data from standard input or from the file mentioned on the command line. For example, the following command translates `foo.csv` to xml output.

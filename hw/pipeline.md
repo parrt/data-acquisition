@@ -89,7 +89,7 @@ The data follows the header row, with one record per line. The key element of th
 
 ### Parsing simple CSV files
 
-It's often best to start with a tiny input example before tackling a bigger data set. I made a small CSV file:
+It's often best to start with a tiny input example before tackling a bigger data set. I made a small CSV file [t.csv](https://raw.githubusercontent.com/parrt/data-acquisition/master/data/t.csv):
  
 ```csv
 when,a,b
@@ -222,7 +222,7 @@ The header names could have spaces in them, which makes them not legal XML tag n
 
 ### Generating JSON
 
-JSON, a format typically used for the transmission of JavaScript data objects, is also extremely popular. It is very similar to XML in that each data element is identified specifically. Naturally, JSON syntax looks quite different from XML but at an abstract level there very similar.
+JSON, a format typically used for the transmission of JavaScript data objects between browser and server, is also extremely popular. It is very similar to XML in that each data element is identified specifically. Naturally, JSON syntax looks quite different from XML but at an abstract level there very similar.
 
 ```json
 {
@@ -261,14 +261,43 @@ There are a number of XML libraries for Python, but the simplest one to use is [
 xml = untangle.parse(xmltxt)
 ```
 
-At this point, we need to know about the actual structure of the XML before we can pull data out. The root of the structure is the `file` tag so `xml.file` will get us that node in the tree. From there, you need to iterate over the `record` elements underneath the `data` tag. Pull out the individual values by their name such as `Date`.  Be careful how you fill in the CSV "table" for output: the order of the columns must be the order given in the headers tag.
+At this point, we need to know about the actual structure of the XML before we can pull data out. **This code will only work with XML structured like the XML output we generated above.** The root of the structure is the `file` tag so `xml.file` will get us that node in the tree. From there, you need to iterate over the `record` elements underneath the `data` tag. Pull out the individual values by their name such as `Date`.  Be careful how you fill in the CSV "table" for output: the order of the columns must be the order given in the headers tag.
 
-https://raw.githubusercontent.com/parrt/data-acquisition/master/data/AAPL.xml
+The [Apple stock history in XML format](https://raw.githubusercontent.com/parrt/data-acquisition/master/data/AAPL.xml) looks like:
 
-Notice that there are no spaces in the tag names but the `headers` tag might include header names with spaces like `Adj Close`. You will have to take this into consideration when looking for tags in the XML.
+```xml
+<?xml version="1.0"?>
+<file>
+  <headers>Date,Open,High,Low,Close,Volume,Adj Close</headers>
+  <data>
+    <record>
+      <Date>2016-08-12</Date><Open>107.779999</Open><High>108.440002</High><Low>107.779999</Low><Close>108.18</Close><Volume>18612300</Volume><Adj_Close>108.18</Adj_Close>
+    </record>
+...
+```
 
-[cd_catalog.xml](https://raw.githubusercontent.com/parrt/data-acquisition/master/data/cd_catalog.xml)
+Notice that there are no spaces in the tag names but the `headers` tag includes header names with spaces like `Adj Close`. You will have to take this into consideration when looking for tags in the XML. Your output should look like the original AAPL.csv file that we worked with at the start of this project.
 
+Another fun data set is [cd_catalog.xml](https://raw.githubusercontent.com/parrt/data-acquisition/master/data/cd_catalog.xml), which looks like:
+
+```xml
+<?xml version="1.0" encoding="ISO8859-1" ?>
+<file>
+<headers>TITLE,ARTIST,COUNTRY,COMPANY,PRICE,YEAR</headers>
+  <data>
+	  <record>
+	    <TITLE>Empire Burlesque</TITLE>
+	    <ARTIST>Bob Dylan</ARTIST>
+	    <COUNTRY>USA</COUNTRY>
+	    <COMPANY>Columbia</COMPANY>
+	    <PRICE>10.90</PRICE>
+	    <YEAR>1985</YEAR>
+	  </record>
+...
+```
+
+The converted data in CSV should look like:
+ 
 ```bash
 TITLE,ARTIST,COUNTRY,COMPANY,PRICE,YEAR
 Empire Burlesque,Bob Dylan,USA,Columbia,10.90,1985
@@ -279,7 +308,7 @@ Eros,Eros Ramazzotti,EU,BMG,9.90,1997
 ...
 ```
 
-You can check your work with:
+You can check your work with any of the XML files:
  
 ```bash
 $ python xml2csv.py /tmp/t.xml | python csv2xml.py > /tmp/t2.xml
@@ -323,33 +352,3 @@ $ diff /tmp/t.json /tmp/t2.json
 * csv2json.py
 * json2csv.py
 * xml2csv.py
-
-## Evaluation
-
-Each of the five translators will be tested automatically. Any programming errors or invalid output will result in a zero for that particular test. Each of the translators gets 20% of the score.  Note, however, that if your CSV `readcsv()` function doesn't work, your csv2*.py scripts will not work either so make sure you get that working correctly first.
-
-You will find some [sample input](https://github.com/parrt/msan692/blob/master/hw/code/pipeline/data) and [expected output](https://github.com/parrt/msan692/blob/master/hw/code/pipeline/output) in this course repository.
-
-I provide a [test shell script](https://github.com/parrt/msan692/blob/master/hw/code/pipeline/testdata.sh) that you can use to test your data format generation and conversion.  Your project will be graded by running the following samples and likely some others:
-
-```bash
-$ ./testdata.sh data output
-Test AAPL
-   csv2html: output/AAPL.html and /tmp/AAPL.html same
-   csv2xml: output/AAPL.xml and /tmp/AAPL.xml same
-   csv2json: output/AAPL.json and /tmp/AAPL.json same
-   xml2csv: data/AAPL.csv and /tmp/AAPL.csv same
-   json2csv: data/AAPL.csv and /tmp/AAPL.csv same
-   xml2csv|csv2xml: output/AAPL.xml and /tmp/AAPL.xml same
-   json2csv|csv2json: output/AAPL.json and /tmp/AAPL.json same
-Test t
-   csv2html: output/t.html and /tmp/t.html same
-   csv2xml: output/t.xml and /tmp/t.xml same
-   csv2json: output/t.json and /tmp/t.json same
-   xml2csv: data/t.csv and /tmp/t.csv same
-   json2csv: data/t.csv and /tmp/t.csv same
-   xml2csv|csv2xml: output/t.xml and /tmp/t.xml same
-   json2csv|csv2json: output/t.json and /tmp/t.json same
-```
-
-To get credit for the various deliverables, all related tests must pass, as shown here.

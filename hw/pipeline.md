@@ -263,8 +263,11 @@ xml = untangle.parse(xmltxt)
 
 At this point, we need to know about the actual structure of the XML before we can pull data out. The root of the structure is the `file` tag so `xml.file` will get us that node in the tree. From there, you need to iterate over the `record` elements underneath the `data` tag. Pull out the individual values by their name such as `Date`.  Be careful how you fill in the CSV "table" for output: the order of the columns must be the order given in the headers tag.
 
+https://raw.githubusercontent.com/parrt/data-acquisition/master/data/AAPL.xml
+
 Notice that there are no spaces in the tag names but the `headers` tag might include header names with spaces like `Adj Close`. You will have to take this into consideration when looking for tags in the XML.
 
+[cd_catalog.xml](https://raw.githubusercontent.com/parrt/data-acquisition/master/data/cd_catalog.xml)
 
 ```bash
 TITLE,ARTIST,COUNTRY,COMPANY,PRICE,YEAR

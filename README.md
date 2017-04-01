@@ -46,7 +46,7 @@ This certificate course is part of the [Data Institute at the University of San 
 * [PDF using pdf2txt.py](https://github.com/parrt/msan692/blob/master/notes/pdf.md) (Parsing documents from Eisenhower's presidential library)
 * [Excel](https://github.com/parrt/msan692/blob/master/notes/excel.md) (Saving as CSV, stripping non-ASCII stuff, loading into Python)
 * [HTML](https://github.com/parrt/msan692/blob/master/notes/html.md) (Parsing Tesla's IPO prospectus)
-* [Parsing web access log files](https://github.com/parrt/msan692/blob/master/notes/logs.md)
+* (Optional) [Parsing web access log files](https://github.com/parrt/msan692/blob/master/notes/logs.md)
 
 ## How the web works
 

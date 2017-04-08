@@ -55,7 +55,6 @@ This certificate course is part of the [Data Institute at the University of San 
 * [HTTP](https://github.com/parrt/msan692/blob/master/notes/http.md)
 * [flask](https://github.com/parrt/msan692/blob/master/notes/flask.md)
 * (Optional) [Web analytics](https://github.com/parrt/msan692/blob/master/notes/webanalytics.md)
-* [Cookies](https://github.com/parrt/msan692/blob/master/notes/cookies.md), logging in/out
 * [Building web servers](https://github.com/parrt/data-acquisition/blob/master/hw/server.md) (**project**)
 
 ## Data sources
@@ -67,6 +66,7 @@ This certificate course is part of the [Data Institute at the University of San 
 * Pull data from sites requiring an ID
   * [Zillow](https://github.com/parrt/msan692/blob/master/notes/zillow.md)
   * [Youtube](https://github.com/parrt/msan692/blob/master/notes/youtube.md)
+* [Cookies](https://github.com/parrt/msan692/blob/master/notes/cookies.md)
 * [APIs requiring authentication/identification](https://github.com/parrt/msan692/blob/master/notes/authapi.md)
   * [LinkedIn](https://github.com/parrt/msan692/blob/master/notes/linkedin.md)
   * [Facebook](https://github.com/parrt/msan692/blob/master/notes/facebook.md)

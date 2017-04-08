@@ -43,10 +43,10 @@ This certificate course is part of the [Data Institute at the University of San 
 	* reading delimited data; tsv, csv
 	* reading/generating XML
 	* reading/generating json
-* [PDF using pdf2txt.py](https://github.com/parrt/msan692/blob/master/notes/pdf.md) (Parsing documents from Eisenhower's presidential library)
 * [Excel](https://github.com/parrt/msan692/blob/master/notes/excel.md) (Saving as CSV, stripping non-ASCII stuff, loading into Python)
+* [PDF using pdf2txt.py](https://github.com/parrt/msan692/blob/master/notes/pdf.md) (Parsing documents from Eisenhower's presidential library)
 * [HTML](https://github.com/parrt/msan692/blob/master/notes/html.md) (Parsing Tesla's IPO prospectus)
-* [Parsing web access log files](https://github.com/parrt/msan692/blob/master/notes/logs.md)
+* (Optional) [Parsing web access log files](https://github.com/parrt/msan692/blob/master/notes/logs.md)
 
 ## How the web works
 
@@ -54,23 +54,22 @@ This certificate course is part of the [Data Institute at the University of San 
 * [client/server architecture](https://github.com/parrt/msan692/blob/master/notes/client-server.md)
 * [HTTP](https://github.com/parrt/msan692/blob/master/notes/http.md)
 * [flask](https://github.com/parrt/msan692/blob/master/notes/flask.md)
-* [Web analytics](https://github.com/parrt/msan692/blob/master/notes/webanalytics.md)
-* [Cookies](https://github.com/parrt/msan692/blob/master/notes/cookies.md), logging in/out
+* (Optional) [Web analytics](https://github.com/parrt/msan692/blob/master/notes/webanalytics.md)
 * [Building web servers](https://github.com/parrt/data-acquisition/blob/master/hw/server.md) (**project**)
 
 ## Data sources
 
-* files
 * [Pulling data from (open) REST APIs](https://github.com/parrt/msan692/blob/master/notes/openapi.md)
- * yahoo
- * openpayments.us
- * IMDB movie data
+  * yahoo
+  * openpayments.us
+  * IMDB movie data
 * Pull data from sites requiring an ID
- * [Zillow](https://github.com/parrt/msan692/blob/master/notes/zillow.md)
- * [Youtube](https://github.com/parrt/msan692/blob/master/notes/youtube.md)
+  * [Zillow](https://github.com/parrt/msan692/blob/master/notes/zillow.md)
+  * [Youtube](https://github.com/parrt/msan692/blob/master/notes/youtube.md)
+* [Cookies](https://github.com/parrt/msan692/blob/master/notes/cookies.md)
 * [APIs requiring authentication/identification](https://github.com/parrt/msan692/blob/master/notes/authapi.md)
- * [LinkedIn](https://github.com/parrt/msan692/blob/master/notes/linkedin.md)
- * [Facebook](https://github.com/parrt/msan692/blob/master/notes/facebook.md)
+  * [LinkedIn](https://github.com/parrt/msan692/blob/master/notes/linkedin.md)
+  * [Facebook](https://github.com/parrt/msan692/blob/master/notes/facebook.md)
 * [Extracting data from web pages](https://github.com/parrt/msan692/blob/master/notes/scraping.md)
   * [Crawling](https://github.com/parrt/msan692/blob/master/notes/crawling.md)
   * [buzzfeed](https://github.com/parrt/msan692/blob/master/notes/buzzfeed.md)

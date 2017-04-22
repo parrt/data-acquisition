@@ -67,7 +67,7 @@ This certificate course is part of the [Data Institute at the University of San 
   * [Zillow](https://github.com/parrt/msan692/blob/master/notes/zillow.md)
   * [Youtube](https://github.com/parrt/msan692/blob/master/notes/youtube.md)
 * [Cookies](https://github.com/parrt/msan692/blob/master/notes/cookies.md)
-* [APIs requiring authentication/identification](https://github.com/parrt/msan692/blob/master/notes/authapi.md)
+* (Optional) [APIs requiring authentication/identification](https://github.com/parrt/msan692/blob/master/notes/authapi.md)
   * [LinkedIn](https://github.com/parrt/msan692/blob/master/notes/linkedin.md)
   * [Facebook](https://github.com/parrt/msan692/blob/master/notes/facebook.md)
 * [Extracting data from web pages](https://github.com/parrt/msan692/blob/master/notes/scraping.md)

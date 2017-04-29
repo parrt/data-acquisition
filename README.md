@@ -77,15 +77,6 @@ This certificate course is part of the [Data Institute at the University of San 
   * [Scraping data from tables](https://github.com/parrt/msan692/blob/master/notes/scraping-tables.md)
 * [Selenium](https://github.com/parrt/msan692/blob/master/notes/selenium.md)
 
-## Feature extraction
-
-* [Computing TFIDF](https://github.com/parrt/msan692/blob/master/notes/tfidf.pdf)
-* [TFIDF document summarization](https://github.com/parrt/data-acquisition/blob/master/hw/tfidf.md) (**project**)
-* regex
-* Unix commands for extracting web content: wget, grep, awk, cut, paste, join, sed
-* k-means for compression, color selection
-
 ## Misc
 
-* Running shell commands from Python
-* [San Francisco police incidents word clouds and heat maps](https://github.com/parrt/msan692/blob/master/notes/sfpd.md)
+* (Optional) [San Francisco police incidents word clouds and heat maps](https://github.com/parrt/msan692/blob/master/notes/sfpd.md)
